@@ -1,8 +1,8 @@
 # producer-consumer
-Practicing Inter-Process/Inter-thread communication, by solving the producer-consumer problem. Also known as the bounded buffer problem, we are trying to analyse how both threads/ processes perform when we have a buffer of a fixed size (B), number of elemnents(N),  Consumers (C) and Producers (P). This was one of the labs for my operating systems course(ECE-254), and I added some extra stuff to it. Credits to the lab TAs and the course instructor for the help throughout this amazing course.
+Practicing Inter-Process/Inter-thread communication, by solving the producer-consumer problem. Also known as the bounded buffer problem, we are trying to analyse how both threads/ processes perform when we have a buffer of a fixed size (B), number of elements to be produced(N),  Consumers (C) and Producers (P). This was one of the labs for my operating systems course(ECE-254), and I added some extra stuff to it. Credits to the lab TAs and the course instructor for the help throughout this amazing course.
 
 # What is it?
-We are practicing inter-process communication in both threads and processes. I have used message queues for processes, and shared memory for threads. We create a buffer of size **B**, and then **P** producers produce a total of **N** elements.      **C** consumers consume the items in the buffer, and we stop once we are done consuming/ producing them.
+We are practicing inter-process communication in both threads and processes. I have used message queues for processes, and shared memory for threads. We create a buffer of size **B**, and then **P** producers produce a total of **N** elements and fill the buffer. Simulataneously, **C** consumers consume the items in the buffer, and we stop once we are done consuming/ producing them.
 
 ## How to run? 
 collect_data.py is used to run the different cases and build the results csv. You can run it inside either src/threads directory or src/processes directory. <br>
