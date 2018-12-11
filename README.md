@@ -3,5 +3,5 @@ Practising Inter-Process/Inter-thread communication, by solving the producer-con
 
 ## How to run and see results? 
 collect_data.py is used to run the different cases and build the results csv. You can run it inside either threads directory or processes directory. <br>
-```make``` 
+```make``` to create the ./produce.out file <br>
 ``` python collect_data.py ```
